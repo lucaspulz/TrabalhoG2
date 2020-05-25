@@ -2,62 +2,25 @@ package entidades;
 
 import java.util.Date;
 
-public class Paciente {
-	private String nome;
-	private Contato contato;
-	private Endereco endereco;
-	private Date dataNascimento;
-	private int rg;
-	private int cpf;
+public class Paciente extends Pessoa {
+	
 	private Doenca doenca;
 	private Quarto quarto;
 	
 	
 	public Paciente() {
+		
 	}
-	public Paciente(String nome, Contato contato,Date dataNascimento,  int cpf,Quarto quarto) {
-		this.nome = nome;
-		this.contato = contato;
-		this.dataNascimento = dataNascimento;
-		this.cpf = cpf;
+	
+	
+	
+	public Paciente(String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
+			Doenca doenca, Quarto quarto) {
+		super(nome, contato, endereco, dataNascimento, rg, cpf);
+		this.doenca = doenca;
 		this.quarto = quarto;
 	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public Contato getContato() {
-		return contato;
-	}
-	public void setContato(Contato contato) {
-		this.contato = contato;
-	}
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-	public int getRg() {
-		return rg;
-	}
-	public void setRg(int rg) {
-		this.rg = rg;
-	}
-	public int getCpf() {
-		return cpf;
-	}
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
-	}
+
 	public Doenca getDoenca() {
 		return doenca;
 	}

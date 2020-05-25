@@ -2,13 +2,8 @@ package entidades;
 
 import java.util.Date;
 
-public class Funcionario {
-	private String nome;
-	private Contato contato;
-	private Endereco endereco;
-	private Date dataNascimento;
-	private int rg;
-	private int cpf;
+public class Funcionario extends Pessoa {
+	
 	private String cargo;
 	private double salario;
 	
@@ -16,60 +11,11 @@ public class Funcionario {
 		
 	}
 
-	public Funcionario(String nome, Contato contato, int cpf, String cargo) {
-		
-		this.nome = nome;
-		this.contato = contato;
-		this.cpf = cpf;
+	public Funcionario(String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
+			String cargo, double salario) {
+		super(nome, contato, endereco, dataNascimento, rg, cpf);
 		this.cargo = cargo;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public Contato getContato() {
-		return contato;
-	}
-
-	public void setContato(Contato contato) {
-		this.contato = contato;
-	}
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-
-	public int getRg() {
-		return rg;
-	}
-
-	public void setRg(int rg) {
-		this.rg = rg;
-	}
-
-	public int getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
+		this.salario = salario;
 	}
 
 	public String getCargo() {
