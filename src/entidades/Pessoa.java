@@ -2,6 +2,8 @@ package entidades;
 
 import java.util.Date;
 
+import javax.swing.JOptionPane;
+
 public class Pessoa {
 	
 	private int id;
@@ -11,6 +13,7 @@ public class Pessoa {
 	private Date dataNascimento;
 	private int rg;
 	private int cpf;
+	private double salario;
 	
 	
 	
@@ -25,7 +28,9 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 		this.rg = rg;
 		this.cpf = cpf;
+		
 	}
+	
 	
 	public int getId() {
 		return id;
@@ -70,7 +75,15 @@ public class Pessoa {
 	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	}
 	
 	
 
-}
+

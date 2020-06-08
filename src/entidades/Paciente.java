@@ -2,6 +2,8 @@ package entidades;
 
 import java.util.Date;
 
+import javax.swing.JOptionPane;
+
 public class Paciente extends Pessoa {
 	
 	private Doenca doenca;
@@ -52,7 +54,7 @@ public class Paciente extends Pessoa {
 		this.quarto = quarto;
 	}
 	
-	
+	}
 	
 
-}
+

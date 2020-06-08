@@ -8,6 +8,7 @@ public class RepositorioDoacao {
 		valor = Double.parseDouble(JOptionPane.showInputDialog(null,"Quanto quer Doar ? "));
 		return  valor;
 	}
+	
 	public int valorDoardo(int valor) {
 		valor = Integer.parseInt(JOptionPane.showInputDialog(null,"Quanto quer Doar ? "));
 		return  valor;
