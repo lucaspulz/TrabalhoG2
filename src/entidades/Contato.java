@@ -4,6 +4,7 @@ public class Contato {
 	private int telefoneResidencial;
 	private int whatsApp;
 	private int telefoneCelular;
+	
 	public int getTelefoneResidencial() {
 		return telefoneResidencial;
 	}

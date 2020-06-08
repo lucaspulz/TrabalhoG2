@@ -3,6 +3,8 @@ package entidades;
 import java.util.Date;
 
 public class Pessoa {
+	
+	private int id;
 	private String nome;
 	private Contato contato;
 	private Endereco endereco;
@@ -15,7 +17,7 @@ public class Pessoa {
 	public Pessoa() {
 		super();
 	}
-	public Pessoa(String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf) {
+	public Pessoa(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf) {
 		super();
 		this.nome = nome;
 		this.contato = contato;
@@ -24,6 +26,14 @@ public class Pessoa {
 		this.rg = rg;
 		this.cpf = cpf;
 	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
