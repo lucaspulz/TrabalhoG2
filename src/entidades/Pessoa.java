@@ -4,7 +4,7 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	private int id;
 	private String nome;
@@ -81,6 +81,8 @@ public class Pessoa {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
 	
 	}
 	

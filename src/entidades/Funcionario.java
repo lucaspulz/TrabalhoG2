@@ -25,7 +25,7 @@ public class Funcionario extends Pessoa {
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
-	//Ganha 20% por ser funcionario Medico
+	//Ganha 20% por ser funcionario Medico (Sobrescrevendo o metodo)
 	public double getSalario(double salario) {
 		return super.getSalario()+salario*0.2;
 	}

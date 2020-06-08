@@ -4,7 +4,9 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-public class Paciente extends Pessoa {
+import interfac.Estacionamento;
+
+public class Paciente extends Pessoa implements Estacionamento {
 	
 	private Doenca doenca;
 	private Quarto quarto;
@@ -52,6 +54,15 @@ public class Paciente extends Pessoa {
 	}
 	public void setQuarto(Quarto quarto) {
 		this.quarto = quarto;
+	}
+
+
+
+	@Override
+	public double calculoEstacionamento(double horas) {
+		JOptionPane.showInputDialog(null,"20 Reais a Hora, Quantas Horas vai Ficar?(10 por Horas) ");
+		double total = Double.parseDouble(JOptionPane.showInputDialog(null,"Valor a Ser Pago de Estacionamento : "+horas*10));
+		return total;
 	}
 	
 	}
