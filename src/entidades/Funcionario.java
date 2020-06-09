@@ -2,6 +2,7 @@ package entidades;
 
 import java.util.Date;
 
+//Classe Funcionario herda todos os atributos de Pessoa
 public class Funcionario extends Pessoa {
 	
 	private String cargo;
@@ -10,7 +11,7 @@ public class Funcionario extends Pessoa {
 	public Funcionario() {
 		
 	}
-
+	//Construtor  (Super para usar os atributos de Pessoa no Contrutor)
 	public Funcionario(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
 			String cargo,double salario) {
 		super(id,nome, contato, endereco, dataNascimento, rg, cpf);

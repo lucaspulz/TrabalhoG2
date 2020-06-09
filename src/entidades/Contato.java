@@ -1,5 +1,6 @@
 package entidades;
 
+//Classe Contato onde é instanciada na classe Pessoa e Funcionario 
 public class Contato {
 	private int telefoneResidencial;
 	private int whatsApp;

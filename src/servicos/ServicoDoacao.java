@@ -5,12 +5,14 @@ import javax.swing.JOptionPane;
 import repositorio.RepositorioDoacao;
 
 public class ServicoDoacao {
-	
+	//Estancia a classe repositorio Doação
 	RepositorioDoacao repositorioDoacao;
+	
 	
 	public ServicoDoacao() {
 		repositorioDoacao = new RepositorioDoacao();
 		}
+	//Valição dos valores a serem doardos com todas as assinaturas
 	public double valorDoado(double valor) {
 		if(valor>0) {
 		JOptionPane.showMessageDialog(null, "Obrigado pela Doação de em Dinheiro: "+valor);

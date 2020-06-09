@@ -2,6 +2,8 @@ package repositorio;
 
 import javax.swing.JOptionPane;
 
+//Classe Doação para ao termina de cadastrar o funcionario ou paciente 
+//criada para usar o mesmo metodo com varias assinaturas.
 public class RepositorioDoacao {
 	
 	public double valorDoado(double valor) {

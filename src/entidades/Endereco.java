@@ -1,5 +1,6 @@
 package entidades;
 
+//Classe endereco adicionada na Classe Paciente e Funcionario
 public class Endereco {
 	private String rua;
 	private String bairro;

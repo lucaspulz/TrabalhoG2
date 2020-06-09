@@ -1,5 +1,6 @@
 package entidades;
 
+//Classe Doenca adicionado a classe Paciente
 public class Doenca {
 	private String nome;
 	private String remedio;

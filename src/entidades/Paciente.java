@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 
 import interfac.Estacionamento;
 
+//Classe paciente herda os atributos de Pessoa e Implementa o Estacionamento para calcular o valor
 public class Paciente extends Pessoa implements Estacionamento {
 	
 	private Doenca doenca;
@@ -20,7 +21,7 @@ public class Paciente extends Pessoa implements Estacionamento {
 	}
 	
 	
-	
+	//Construtor da Classe (Super para pegar os atributos da Super classe)
 	public Paciente(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
 			Doenca doenca, Quarto quarto,Remedio remedio) {
 		super(id,nome, contato, endereco, dataNascimento, rg, cpf);
@@ -57,7 +58,7 @@ public class Paciente extends Pessoa implements Estacionamento {
 	}
 
 
-
+	//Calculo da classe interface
 	@Override
 	public double calculoEstacionamento(double horas) {
 		JOptionPane.showInputDialog(null,"20 Reais a Hora, Quantas Horas vai Ficar?(10 por Horas) ");

@@ -1,5 +1,6 @@
 package entidades;
 
+//Classe remedio é utilziada na classe paciente 
 public class Remedio {
 	private String nome;
 

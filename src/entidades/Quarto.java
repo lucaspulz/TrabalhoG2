@@ -1,5 +1,6 @@
 package entidades;
 
+//Classe Quarto é utilizada na classe Paciente
 public class Quarto {
 	private int numeroQuarto;
 	private int numeroLeitos;

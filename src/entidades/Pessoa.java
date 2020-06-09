@@ -3,7 +3,7 @@ package entidades;
 import java.util.Date;
 
 import javax.swing.JOptionPane;
-
+//Classe Abstrata pois não precisa ser instanciada 
 public abstract class Pessoa {
 	
 	private int id;
@@ -20,6 +20,7 @@ public abstract class Pessoa {
 	public Pessoa() {
 		super();
 	}
+	//Costrutor da classe pessoa 
 	public Pessoa(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf) {
 		super();
 		this.nome = nome;
