@@ -3,16 +3,17 @@ package entidades;
 import java.util.Date;
 
 import javax.swing.JOptionPane;
-//Classe Abstrata pois não precisa ser instanciada 
+//Classe Abstrata pois não precisa ser instanciada e é a Super Classe
+
 public abstract class Pessoa {
 	
 	private int id;
 	private String nome;
 	private Contato contato;
 	private Endereco endereco;
-	private Date dataNascimento;
+	private String dataNascimento;
 	private int rg;
-	private int cpf;
+	private String cpf;
 	private double salario;
 	
 	
@@ -21,7 +22,7 @@ public abstract class Pessoa {
 		super();
 	}
 	//Costrutor da classe pessoa 
-	public Pessoa(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf) {
+	public Pessoa(int id,String nome, Contato contato, Endereco endereco, String dataNascimento, int rg, String cpf) {
 		super();
 		this.nome = nome;
 		this.contato = contato;
@@ -58,10 +59,10 @@ public abstract class Pessoa {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	public int getRg() {
@@ -70,10 +71,10 @@ public abstract class Pessoa {
 	public void setRg(int rg) {
 		this.rg = rg;
 	}
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 	public double getSalario() {

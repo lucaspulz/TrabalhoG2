@@ -13,9 +13,9 @@ public class ServicoDoacao {
 		repositorioDoacao = new RepositorioDoacao();
 		}
 	//Valição dos valores a serem doardos com todas as assinaturas
-	public double valorDoado(double valor) {
+	public int valorDoado(int valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação de em Dinheiro: "+valor);
+		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
 		return 0;
 	}
 		else {
@@ -23,9 +23,9 @@ public class ServicoDoacao {
 		return 0;
 		}
 	}
-	public int valorDoado(int valor) {
+	public int valorDoado(double valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação em Cheque : "+valor);
+		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
 		return 0;
 	}
 		else {
@@ -35,7 +35,7 @@ public class ServicoDoacao {
 	}
 	public float valorDoado(float valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação Em Cartões : "+valor);
+		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
 		return 0;
 	}
 		else {

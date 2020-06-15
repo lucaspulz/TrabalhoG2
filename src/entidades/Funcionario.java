@@ -12,7 +12,7 @@ public class Funcionario extends Pessoa {
 		
 	}
 	//Construtor  (Super para usar os atributos de Pessoa no Contrutor)
-	public Funcionario(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
+	public Funcionario(int id,String nome, Contato contato, Endereco endereco, String dataNascimento, int rg, String cpf,
 			String cargo,double salario) {
 		super(id,nome, contato, endereco, dataNascimento, rg, cpf);
 		this.cargo = cargo;

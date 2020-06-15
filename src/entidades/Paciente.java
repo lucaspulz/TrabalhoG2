@@ -4,7 +4,7 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-import interfac.Estacionamento;
+import contratos.Estacionamento;
 
 //Classe paciente herda os atributos de Pessoa e Implementa o Estacionamento para calcular o valor
 public class Paciente extends Pessoa implements Estacionamento {
@@ -12,6 +12,7 @@ public class Paciente extends Pessoa implements Estacionamento {
 	private Doenca doenca;
 	private Quarto quarto;
 	private Remedio remedio;
+	private double valor;
 	
 	
 	
@@ -22,7 +23,7 @@ public class Paciente extends Pessoa implements Estacionamento {
 	
 	
 	//Construtor da Classe (Super para pegar os atributos da Super classe)
-	public Paciente(int id,String nome, Contato contato, Endereco endereco, Date dataNascimento, int rg, int cpf,
+	public Paciente(int id,String nome, Contato contato, Endereco endereco, String dataNascimento, int rg, String cpf,
 			Doenca doenca, Quarto quarto,Remedio remedio) {
 		super(id,nome, contato, endereco, dataNascimento, rg, cpf);
 		this.doenca = doenca;
@@ -41,6 +42,16 @@ public class Paciente extends Pessoa implements Estacionamento {
 		this.remedio = remedio;
 	}
 
+	
+
+	public double getValor() {
+		return valor;
+	}
+
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
 
 
 	public Doenca getDoenca() {
@@ -61,8 +72,8 @@ public class Paciente extends Pessoa implements Estacionamento {
 	//Calculo da classe interface
 	@Override
 	public double calculoEstacionamento(double horas) {
-		JOptionPane.showInputDialog(null,"20 Reais a Hora, Quantas Horas vai Ficar?(10 por Horas) ");
-		double total = Double.parseDouble(JOptionPane.showInputDialog(null,"Valor a Ser Pago de Estacionamento : "+horas*10));
+		
+		double total = horas * 10;
 		return total;
 	}
 	
