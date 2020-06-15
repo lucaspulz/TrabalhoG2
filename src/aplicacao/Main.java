@@ -144,18 +144,34 @@ public class Main {
 			if(opcao3==1) {
 				
 				int valor = Integer.parseInt(JOptionPane.showInputDialog(null,"Valor que quer Doar: "));
-				sd.valorDoado(valor);
+				if(valor>0) {
+					sd.valorDoado(valor);
+					JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
+				}else {
+					JOptionPane.showMessageDialog(null, "Não pode Doar nada ou Negativo");
+				}
 				}
 			
 			if(opcao3==2) {
 				
 				double valor = Double.parseDouble(JOptionPane.showInputDialog(null,"Valor que quer Doar: "));
-				sd.valorDoado(valor);
+				if(valor>0) {
+					sd.valorDoado(valor);
+					JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
+				}else {
+					JOptionPane.showMessageDialog(null, "Não pode Doar nada ou Negativo");
+				}
+				
 				}
 			if(opcao3==3) {
 				
 				float valor = Float.parseFloat(JOptionPane.showInputDialog(null,"Valor que quer Doar: "));
-				sd.valorDoado(valor);
+				if(valor>0) {
+					sd.valorDoado(valor);
+					JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
+				}else {
+					JOptionPane.showMessageDialog(null, "Não pode Doar nada ou Negativo");
+				}
 				}
 			
 		}

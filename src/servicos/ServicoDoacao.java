@@ -15,31 +15,31 @@ public class ServicoDoacao {
 	//Valição dos valores a serem doardos com todas as assinaturas
 	public int valorDoado(int valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
-		return 0;
+		
+		return valor;
 	}
 		else {
-		JOptionPane.showMessageDialog(null, "Não Pode Doar Valor Negativo ou Nada" );
+		
 		return 0;
 		}
 	}
-	public int valorDoado(double valor) {
+	public double valorDoado(double valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
-		return 0;
+			
+		return valor;
 	}
 		else {
-			JOptionPane.showMessageDialog(null, "Não Pode Doar Valor Negativo ou Nada" );
-			return 0;
+			
+		return 0;
 			}
 	}
 	public float valorDoado(float valor) {
 		if(valor>0) {
-		JOptionPane.showMessageDialog(null, "Obrigado pela Doação De : R$ "+valor);
-		return 0;
+			
+		return valor;
 	}
 		else {
-			JOptionPane.showMessageDialog(null, "Não Pode Doar Valor Negativo ou Nada" );
+		
 			return 0;
 			}
 	}}
