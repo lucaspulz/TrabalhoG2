@@ -26,7 +26,7 @@ public class ServicoPaciente {
 		   paciente.getContato().getWhatsApp()==0||
 		   Uteis.notNullIsBlank(paciente.getEndereco().getRua())||
 		   Uteis.notNullIsBlank(paciente.getEndereco().getBairro())||
-		   Uteis.notNullIsBlank(paciente.getEndereco().getEstado())||
+		   Uteis.notNullIsBlank(paciente.getEndereco().getCidadeEEstado())||
 		   Uteis.notNullIsBlank(paciente.getEndereco().getCEP())||
 		   paciente.getEndereco().getNumCasa()==0||
 		   Uteis.notNullIsBlank(paciente.getDataNascimento())||

@@ -36,7 +36,7 @@ public class RepositorioFuncionario {
 					.concat("Rua: ".concat(func.getEndereco().getRua()).concat("\n"))
 					.concat("Numero da Casa: ".concat(func.getEndereco().getNumCasa()+"").concat("\n"))
 					.concat("Bairro: ".concat(func.getEndereco().getBairro()).concat("\n"))
-					.concat("Estado: ".concat(func.getEndereco().getEstado()).concat("\n"))
+					.concat("Cidade eEstado: ".concat(func.getEndereco().getCidadeEEstado()).concat("\n"))
 					.concat("CEP: ".concat(func.getEndereco().getCEP()).concat("\n"))
 					.concat("Salario: ".concat(func.getSalario(func.getSalario())+"").concat("\n")
 					.concat(" \n"+" ------------------------------------------------------------------- "+"\n"));

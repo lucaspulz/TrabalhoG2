@@ -1,5 +1,7 @@
 package entidades;
 
+import java.math.BigInteger;
+
 //Classe Contato onde é instanciada na classe Pessoa e Funcionario 
 public class Contato {
 	private int telefoneResidencial;

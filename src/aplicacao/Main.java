@@ -2,6 +2,7 @@
 
 package aplicacao;
 
+import java.math.BigInteger;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -73,7 +74,7 @@ public class Main {
 			endereco.setRua(JOptionPane.showInputDialog(null,"Digite o Nome da Rua : "));
 			endereco.setNumCasa(Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o Numero da Casa ou AP :")));
 			endereco.setBairro(JOptionPane.showInputDialog(null,"Digite o Nome do Bairro:"));
-			endereco.setEstado(JOptionPane.showInputDialog(null,"Digite o Estado :"));
+			endereco.setCidadeEEstado(JOptionPane.showInputDialog(null,"Digite a Cidade e o Estado :"));
 			endereco.setCEP(JOptionPane.showInputDialog(null,"Digite o CEP :"));
 			funcionario.setEndereco(endereco);	
 			funcionario.setSalario(Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o Salario :")));
@@ -100,7 +101,7 @@ public class Main {
 			endereco.setRua(JOptionPane.showInputDialog(null,"Digite o Nome da Rua : "));
 			endereco.setNumCasa(Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o Numero da Casa ou AP :")));
 			endereco.setBairro(JOptionPane.showInputDialog(null,"Digite o Nome do Bairro:"));
-			endereco.setEstado(JOptionPane.showInputDialog(null,"Digite o Estado :"));
+			endereco.setCidadeEEstado(JOptionPane.showInputDialog(null,"Digite a Cidade e o Estado :"));
 			endereco.setCEP(JOptionPane.showInputDialog(null,"Digite o CEP :"));
 			paciente.setEndereco(endereco);	
 			doenca.setNome(JOptionPane.showInputDialog(null,"Nome da Doença :"));

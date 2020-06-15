@@ -24,7 +24,7 @@ public class ServicoFuncionario {
 			if(Uteis.notNullIsBlank(funcionario.getNome())||funcionario.getContato().getTelefoneCelular()==0||
 			   funcionario.getContato().getTelefoneResidencial()==0||funcionario.getContato().getWhatsApp()==0||
 			   Uteis.notNullIsBlank(funcionario.getEndereco().getRua())||Uteis.notNullIsBlank(funcionario.getEndereco().getBairro())||
-			   Uteis.notNullIsBlank(funcionario.getEndereco().getEstado())||Uteis.notNullIsBlank(funcionario.getEndereco().getCEP())||
+			   Uteis.notNullIsBlank(funcionario.getEndereco().getCidadeEEstado())||Uteis.notNullIsBlank(funcionario.getEndereco().getCEP())||
 			   funcionario.getEndereco().getNumCasa()==0||Uteis.notNullIsBlank(funcionario.getDataNascimento())||
 			   Uteis.notNullIsBlank(funcionario.getCpf())||funcionario.getRg()==0||Uteis.notNullIsBlank(funcionario.getCargo())||
 			   funcionario.getSalario()==0) {

@@ -4,7 +4,7 @@ package entidades;
 public class Endereco {
 	private String rua;
 	private String bairro;
-	private String estado;
+	private String cidadeEEstado;
 	private String CEP;
 	private int numCasa;
 	public String getRua() {
@@ -19,11 +19,11 @@ public class Endereco {
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
-	public String getEstado() {
-		return estado;
+	public String getCidadeEEstado() {
+		return cidadeEEstado;
 	}
-	public void setEstado(String estado) {
-		this.estado = estado;
+	public void setCidadeEEstado(String cidadeEEstado) {
+		this.cidadeEEstado = cidadeEEstado;
 	}
 	public String getCEP() {
 		return CEP;
