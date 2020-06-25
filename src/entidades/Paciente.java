@@ -4,10 +4,10 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-import contratos.Estacionamento;
+import contratos.CalculoEstacionamento;
 
 //Classe paciente herda os atributos de Pessoa e Implementa o Estacionamento para calcular o valor
-public class Paciente extends Pessoa implements Estacionamento {
+public class Paciente extends Pessoa implements CalculoEstacionamento {
 	
 	private Doenca doenca;
 	private Quarto quarto;

@@ -15,7 +15,6 @@ import entidades.Funcionario;
 import entidades.Paciente;
 import entidades.Quarto;
 import entidades.Remedio;
-import repositorio.RepositorioDoacao;
 import repositorio.RepositorioFuncionario;
 import repositorio.RepositorioPaciente;
 import servicos.ServicoDoacao;
@@ -48,7 +47,7 @@ public class Main {
 			Quarto quarto = new Quarto();
 			Remedio remedio = new Remedio();
 			ServicoDoacao sd = new ServicoDoacao();
-			RepositorioDoacao rd = new RepositorioDoacao();
+			
 			
 			
 			 opcao = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite:"+
